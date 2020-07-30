@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "Roboto";
+    src:
+        local("Roboto Regular"),
+        url("/fonts/Roboto-Bold.eot"),
+        url("/fonts/Roboto-Bold.ttf"),
+        url("/fonts/Roboto-Bold.woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src:
+        local("Roboto Regular"),
+        url("/fonts/Roboto-Regular.eot"),
+        url("/fonts/Roboto-Regular.ttf"),
+        url("/fonts/Roboto-Regular.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.main-header {
+    min-height: 100vh;        
+}
+
+.header-container {
+    position: relative;
+    z-index: 2;
+}
+
+.main-header::after {
+    content: "";
+    position: absolute;
+    background-color: #6C63FF;
+    width: 33.333%;
+    height: 100vh;
+    right: 0;
+    top: 0px; 
+}
+
+.header-menu {
+    padding: calc(50 * 100vh / 800)
+             calc(200 * 100vw / 1440);
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-list {
+    display: flex;
+    margin: 0;
+}
+
+.menu-list-item, .icons {
+    list-style-type: none;
+}
+
+.icons {
+    display: flex;
+    margin: 0;
+}
+
+.icon:nth-child(n+2) {
+ padding-left: 24px;
+}
+
+.icons-link-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.menu-list-item:nth-child(n+2) {
+    margin-left: calc(100 * 100vw / 1440);
+}
+
+.menu {
+    color: #3F3D56;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.menu, .link {
+    text-decoration: none;
+}
+
+.header-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 calc(200 * 100vw / 1440);
+}
+
+.header-text {
+    width: 575px;
+}
+
+.header-text-welcome {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #3F3D56;
+}
+
+.header-welcome-else {
+    font-style: normal;
+    font-weight: 900;
+    font-size: calc(1.785vw + 6.285px);
+    line-height: 1.5em;
+    color: #3F3D56
+}
+
+.header-img {
+    margin-left: 40px;;
+    border-radius: 2px;
+    overflow: hidden; 
+}
+
+.my-photo {
+    object-fit: cover;
+    width: 424px;
+    max-width: 100%;
+}
+
+.button-skills-description {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #6C63FF;
+    border: 2px solid #6C63FF;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 8px 55px;
+}
