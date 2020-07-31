@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Roboto";
     src:
-        local("Roboto Regular"),
+        local("Roboto Bold"),
         url("/fonts/Roboto-Bold.eot"),
         url("/fonts/Roboto-Bold.ttf"),
         url("/fonts/Roboto-Bold.woff");
@@ -123,7 +123,7 @@ body {
 
 .header-welcome-else {
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     font-size: calc(1.785vw + 6.285px);
     line-height: 1.5em;
     color: #3F3D56;
@@ -148,10 +148,6 @@ body {
     .my-photo {
         width: 424px;
     }
-}
-
-.button-skills {
-    text-align: center;
 }
 
 .button-skills-description {
@@ -220,6 +216,10 @@ body {
         line-height: 1.33em;
         padding-top: calc(5 * 100vh / 568);
         padding-bottom: calc(40 * 100vh / 568);
+    }
+
+    .button-skills {
+        text-align: center;
     }
 
     .button-skills-description {
