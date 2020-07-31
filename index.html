@@ -11,7 +11,7 @@
     <header class="main-header">
         <div class="header-container">
             <div class="header-menu">
-                <nav>
+                <nav class="nav-menu">
                     <ul class="menu-list">
                         <li class="menu-list-item">
                             <a href="#0" class="menu">Home</a>
@@ -31,16 +31,16 @@
                     <ul class="icons">
                         <li class="icon">
                             <a href="http://linkedin.com/in/bugtsa/" target="_blank" class="link">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20.4844 0H3.51562C1.57727 0 0 1.57727 0 3.51562V20.4844C0 22.4227 1.57727 24 3.51562 24H20.4844C22.4227 24 24 22.4227 24 20.4844V3.51562C24 1.57727 22.4227 0 20.4844 0ZM8.48438 19.0312H5.67188V9.1875H8.48438V19.0312ZM8.48438 7.78125H5.67188V4.96875H8.48438V7.78125ZM18.3281 19.0312H15.5156V13.4062C15.5156 12.631 14.8846 12 14.1094 12C13.3341 12 12.7031 12.631 12.7031 13.4062V19.0312H9.89062V9.1875H12.7031V9.71759C13.4399 9.48853 13.9186 9.1875 14.8125 9.1875C16.7199 9.18951 18.3281 10.9006 18.3281 12.9229V19.0312Z" fill="white"/>
+                                <svg class="icon-color" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.4844 0H3.51562C1.57727 0 0 1.57727 0 3.51562V20.4844C0 22.4227 1.57727 24 3.51562 24H20.4844C22.4227 24 24 22.4227 24 20.4844V3.51562C24 1.57727 22.4227 0 20.4844 0ZM8.48438 19.0312H5.67188V9.1875H8.48438V19.0312ZM8.48438 7.78125H5.67188V4.96875H8.48438V7.78125ZM18.3281 19.0312H15.5156V13.4062C15.5156 12.631 14.8846 12 14.1094 12C13.3341 12 12.7031 12.631 12.7031 13.4062V19.0312H9.89062V9.1875H12.7031V9.71759C13.4399 9.48853 13.9186 9.1875 14.8125 9.1875C16.7199 9.18951 18.3281 10.9006 18.3281 12.9229V19.0312Z"/>
                                     </svg>                                    
                                 <span class="icons-link-text">linkedin</span>
                             </a>
                         </li>
                         <li class="icon">
                             <a href="https://telegram.im/@bugtsa" target="_blank" class="link">
-                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.77478 12.6752L8.75977 20.1371L12.6458 16.2511L19.3087 21.5469L24 0.453125L0 10.45L5.77478 12.6752ZM17.142 6.50513L9.79596 13.2055L8.88098 16.6539L7.19073 12.4275L17.142 6.50513Z" fill="white"/>
+                                <svg class="icon-color" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.77478 12.6752L8.75977 20.1371L12.6458 16.2511L19.3087 21.5469L24 0.453125L0 10.45L5.77478 12.6752ZM17.142 6.50513L9.79596 13.2055L8.88098 16.6539L7.19073 12.4275L17.142 6.50513Z"/>
                                     </svg>
                                 <span class="icons-link-text">Telegram</span>
                             </a>
@@ -55,13 +55,19 @@
                     <div class="button-skills">
                         <a href="#" class="link"><span class="button-skills-description">My Skills</span></a></div>
                 </div>    
-                <div class="header-img">
-                    <img src="images/photo_2020-06-26_20-29-54.jpg" class="my-photo" alt="My Photo">
-                </div>   
+                <picture class="header-img">
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="images/photo_2020-06-26_20-30-01.jpg">
+                    <source
+                        media="(max-width: 767px)"
+                        srcset="images/photo_2020-06.jpg">
+                    <img src="images/photo_2020-06-26_20-30-01.jpg" class="my-photo" alt="My Photo">
+                </picture>   
             </div>
         </div>
     </header>
-
+       
 
     <main>
     </main>

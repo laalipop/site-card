@@ -34,20 +34,22 @@ body {
     z-index: 2;
 }
 
-.main-header::after {
-    content: "";
-    position: absolute;
-    background-color: #6C63FF;
-    width: 33.333%;
-    height: 100vh;
-    right: 0;
-    top: 0px; 
+@media (min-width: 768px) {
+    .main-header::after {
+        content: "";
+        position: absolute;
+        background-color: #6C63FF;
+        width: 33.333%;
+        height: 100vh;
+        right: 0;
+        top: 0px; 
+    }
 }
+
 
 .header-menu {
     padding: calc(50 * 100vh / 800)
-             calc(200 * 100vw / 1440);
-    
+             calc(200 * 100vw / 1440);    
     display: flex;
     justify-content: space-between;
 }
@@ -64,6 +66,7 @@ body {
 .icons {
     display: flex;
     margin: 0;
+    padding: 0;
 }
 
 .icon:nth-child(n+2) {
@@ -75,6 +78,10 @@ body {
     width: 1px;
     height: 1px;
     clip: rect(1px, 1px, 1px, 1px);
+}
+
+.icon-color {
+    fill: #ffffff;
 }
 
 .menu-list-item:nth-child(n+2) {
@@ -119,19 +126,32 @@ body {
     font-weight: 900;
     font-size: calc(1.785vw + 6.285px);
     line-height: 1.5em;
-    color: #3F3D56
-}
-
-.header-img {
-    margin-left: 40px;;
-    border-radius: 2px;
-    overflow: hidden; 
+    color: #3F3D56;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 43px;
 }
 
 .my-photo {
     object-fit: cover;
-    width: 424px;
     max-width: 100%;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .header-img {
+        margin-left: 40px;;
+        border-radius: 2px;
+        overflow: hidden; 
+    }
+
+    .my-photo {
+        width: 424px;
+    }
+}
+
+.button-skills {
+    text-align: center;
 }
 
 .button-skills-description {
@@ -147,4 +167,62 @@ body {
     box-sizing: border-box;
     border-radius: 2px;
     padding: 8px 55px;
+}
+
+@media (max-width: 767px) {
+    .header-description {
+        flex-wrap: wrap;
+    }
+
+    .header-text {
+        order: 1;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .my-photo {
+        height: 200px;
+        min-width: 100vw;
+    }
+
+    .icon-color {
+        fill: #6C63FF;
+    }
+
+    .header-menu {
+        padding: 8px 24px;   
+    }
+
+    .header-links-icons {
+        margin-left: auto;
+    }
+
+    .header-description {
+        width: 272px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .header-text {
+        padding-top: calc(20 * 100vh / 568);
+        padding-bottom: calc(32 * 100vh / 568);
+    }
+    
+    .header-text-welcome {
+        font-size: 16px;
+        line-height: 2em;
+    }
+
+    .header-welcome-else {
+        font-size: 24px;
+        line-height: 1.33em;
+        padding-top: calc(5 * 100vh / 568);
+        padding-bottom: calc(40 * 100vh / 568);
+    }
+
+    .button-skills-description {
+        padding: 8px 99px;
+    }
 }
