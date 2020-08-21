@@ -1,80 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Developer Vladimir Polkhovtsev</title>
-    <link rel="stylesheet" href="CSS/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
     <header class="main-header">
-        <div class="header-container">
-            <div class="header-menu">
-                <nav class="nav-menu">
-                    <ul class="menu-list">
-                        <li class="menu-list-item">
-                            <a href="#0" class="menu">Home</a>
-                        </li>
-                        <li class="menu-list-item">
-                            <a href="#0" class="menu">Skills</a>
-                        </li>
-                        <li class="menu-list-item">
-                            <a href="#0" class="menu">About me</a>
-                        </li>
-                        <li class="menu-list-item">
-                            <a href="#0" class="menu">Contacts</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="header-links-icons">
-                    <ul class="icons">
-                        <li class="icon">
-                            <a href="http://linkedin.com/in/bugtsa/" target="_blank" class="link">
-                                <svg class="icon-color" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20.4844 0H3.51562C1.57727 0 0 1.57727 0 3.51562V20.4844C0 22.4227 1.57727 24 3.51562 24H20.4844C22.4227 24 24 22.4227 24 20.4844V3.51562C24 1.57727 22.4227 0 20.4844 0ZM8.48438 19.0312H5.67188V9.1875H8.48438V19.0312ZM8.48438 7.78125H5.67188V4.96875H8.48438V7.78125ZM18.3281 19.0312H15.5156V13.4062C15.5156 12.631 14.8846 12 14.1094 12C13.3341 12 12.7031 12.631 12.7031 13.4062V19.0312H9.89062V9.1875H12.7031V9.71759C13.4399 9.48853 13.9186 9.1875 14.8125 9.1875C16.7199 9.18951 18.3281 10.9006 18.3281 12.9229V19.0312Z"/>
-                                    </svg>                                    
-                                <span class="icons-link-text">linkedin</span>
-                            </a>
-                        </li>
-                        <li class="icon">
-                            <a href="https://telegram.im/@bugtsa" target="_blank" class="link">
-                                <svg class="icon-color" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.77478 12.6752L8.75977 20.1371L12.6458 16.2511L19.3087 21.5469L24 0.453125L0 10.45L5.77478 12.6752ZM17.142 6.50513L9.79596 13.2055L8.88098 16.6539L7.19073 12.4275L17.142 6.50513Z"/>
-                                    </svg>
-                                <span class="icons-link-text">Telegram</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="header-description">
-                <div class="header-text">
-                    <span class="header-text-welcome">Hi, my name is Vladimir Polkhovtsev</span>
-                    <h1 class="header-welcome-else">Welcome to my site-portfolio!<br>I am an Android developer and Software Engineer.</h1>
-                    <div class="button-skills">
-                        <a href="#" class="link"><span class="button-skills-description">My Skills</span></a></div>
-                </div>    
-                <picture class="header-img">
-                    <source
-                        media="(min-width: 768px)"
-                        srcset="images/photo-normal.jpg">
-                    <source
-                        media="(max-width: 767px)"
-                        srcset="images/photo-small.jpg">
-                    <img src="images/photo-normal.jpg" class="my-photo" alt="My Photo">
-                </picture>   
-            </div>
+      <div class="header-container">
+        <div class="header-menu">
+          <nav class="nav-menu">
+            <ul class="menu-list">
+              <li class="menu-list-item">
+                <a href="#0" class="menu">Home</a>
+              </li>
+              <li class="menu-list-item">
+                <a href="#section-title-skills" class="menu">Skills</a>
+              </li>
+              <li class="menu-list-item">
+                <a href="#0" class="menu">About me</a>
+              </li>
+              <li class="menu-list-item">
+                <a href="#0" class="menu">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-links-icons">
+            <ul class="icons">
+              <li class="icon">
+                <a
+                  href="http://linkedin.com/in/bugtsa/"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg
+                    class="icon-color"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.4844 0H3.51562C1.57727 0 0 1.57727 0 3.51562V20.4844C0 22.4227 1.57727 24 3.51562 24H20.4844C22.4227 24 24 22.4227 24 20.4844V3.51562C24 1.57727 22.4227 0 20.4844 0ZM8.48438 19.0312H5.67188V9.1875H8.48438V19.0312ZM8.48438 7.78125H5.67188V4.96875H8.48438V7.78125ZM18.3281 19.0312H15.5156V13.4062C15.5156 12.631 14.8846 12 14.1094 12C13.3341 12 12.7031 12.631 12.7031 13.4062V19.0312H9.89062V9.1875H12.7031V9.71759C13.4399 9.48853 13.9186 9.1875 14.8125 9.1875C16.7199 9.18951 18.3281 10.9006 18.3281 12.9229V19.0312Z"
+                    />
+                  </svg>
+                  <span class="icons-link-text">linkedin</span>
+                </a>
+              </li>
+              <li class="icon">
+                <a
+                  href="https://telegram.im/@bugtsa"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg
+                    class="icon-color"
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.77478 12.6752L8.75977 20.1371L12.6458 16.2511L19.3087 21.5469L24 0.453125L0 10.45L5.77478 12.6752ZM17.142 6.50513L9.79596 13.2055L8.88098 16.6539L7.19073 12.4275L17.142 6.50513Z"
+                    />
+                  </svg>
+                  <span class="icons-link-text">Telegram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="header-description">
+          <div class="header-text">
+            <span class="header-text-welcome">
+                Hi, my name is Vladimir Polkhovtsev</span>
+            <h1 class="header-welcome-else">
+              Welcome to my site-portfolio!<br />I am an Android developer and
+              Software Engineer.
+            </h1>
+
+            <!-- <div class="button-skills">
+              <a href="#section-title-skills" class="link">
+                  <span class="design-button">My Skills</span>
+                </a>
+            </div> -->
+
+            <div class="kind-button">
+                <button type="button" 
+                class="main-buttons" 
+                onClick="location.href='#section-title-skills'">My Skills</button>
+            </div>
+            
+    
+          </div>
+          <picture class="photo-img">
+            <source
+              media="(min-width: 768px)"
+              srcset="images/photo-normal.jpg"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="images/photo-small.jpg"
+            />
+            <img
+              src="images/photo-normal.jpg"
+              class="my-photo"
+              alt="My Photo"
+            />
+          </picture>
+        </div>
+      </div>
     </header>
-       
 
     <main>
+      <section class="section-content skills" id="section-title-skills">
+        <div class="section-container">
+          <div class="section-texts">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-section-text">
+              <span class="content-text"
+                >Welcome to my site-portfolio! <br />I am an Android developer
+                and Software Engineer.</span
+              >
+            </div>
+            <div class="section-skills-names">
+              <ul class="skills-items">
+                <li class="skill-item">Kotlin</li>
+                <li class="skill-item">Java</li>
+                <li class="skill-item">RxJava</li>
+                <li class="skill-item">Cicerone</li>
+                <li class="skill-item">Glide</li>
+                <li class="skill-item">Koin</li>
+                <li class="skill-item">Dagger</li>
+                <li class="skill-item">WebRtc, gRPC, WebSocket</li>
+                <li class="skill-item">Room, ViewModel, DataBinding</li>
+              </ul>
+            </div>
+            <a
+              href="#images/photo-small.jpg"
+              download=""
+              title="xdvc"
+              class="link"
+              ><span class="design-button download">Download PDF</span></a
+            >
+          </div>
+
+          <div class="section-img">
+            <svg
+              class="skills-svg-img"
+              viewBox="0 0 424 395"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M424 0.240234H0.180893V271.617H424V0.240234Z"
+                fill="#E6E6E6"
+              />
+              <path
+                d="M411.881 34.2776H12.2999V255.562H411.881V34.2776Z"
+                fill="white"
+              />
+              <path d="M423.819 0H0V18.0017H423.819V0Z" fill="#6C63FF" />
+              <path
+                d="M13.38 12.54C15.2231 12.54 16.7172 11.0462 16.7172 9.20348C16.7172 7.3608 15.2231 5.867 13.38 5.867C11.537 5.867 10.0429 7.3608 10.0429 9.20348C10.0429 11.0462 11.537 12.54 13.38 12.54Z"
+                fill="white"
+              />
+              <path
+                d="M26.0472 12.54C27.8902 12.54 29.3843 11.0462 29.3843 9.20348C29.3843 7.3608 27.8902 5.867 26.0472 5.867C24.2041 5.867 22.71 7.3608 22.71 9.20348C22.71 11.0462 24.2041 12.54 26.0472 12.54Z"
+                fill="white"
+              />
+              <path
+                d="M38.7141 12.54C40.5572 12.54 42.0513 11.0462 42.0513 9.20348C42.0513 7.3608 40.5572 5.867 38.7141 5.867C36.8711 5.867 35.377 7.3608 35.377 9.20348C35.377 11.0462 36.8711 12.54 38.7141 12.54Z"
+                fill="white"
+              />
+              <path
+                d="M298.817 55.0038H168.727C168.449 54.9672 168.194 54.8309 168.009 54.6203C167.825 54.4098 167.723 54.1393 167.723 53.8592C167.723 53.5792 167.825 53.3087 168.009 53.0981C168.194 52.8876 168.449 52.7513 168.727 52.7147H298.817C299.095 52.7513 299.35 52.8876 299.535 53.0981C299.719 53.3087 299.821 53.5792 299.821 53.8592C299.821 54.1393 299.719 54.4098 299.535 54.6203C299.35 54.8309 299.095 54.9672 298.817 55.0038Z"
+                fill="#CCCCCC"
+              />
+              <path
+                d="M208.677 67.5935H125.966C125.688 67.5569 125.433 67.4206 125.248 67.2101C125.064 66.9995 124.962 66.729 124.962 66.449C124.962 66.1689 125.064 65.8984 125.248 65.6879C125.433 65.4773 125.688 65.341 125.966 65.3044H208.677C208.955 65.341 209.21 65.4773 209.395 65.6879C209.579 65.8984 209.681 66.1689 209.681 66.449C209.681 66.729 209.579 66.9995 209.395 67.2101C209.21 67.4206 208.955 67.5569 208.677 67.5935Z"
+                fill="#CCCCCC"
+              />
+              <path
+                d="M298.818 67.8225H216.106C215.828 67.786 215.573 67.6497 215.388 67.4391C215.204 67.2285 215.102 66.9581 215.102 66.678C215.102 66.398 215.204 66.1275 215.388 65.9169C215.573 65.7064 215.828 65.5701 216.106 65.5335H298.818C299.095 65.5701 299.35 65.7064 299.535 65.9169C299.72 66.1275 299.821 66.398 299.821 66.678C299.821 66.9581 299.72 67.2285 299.535 67.4391C299.35 67.6497 299.095 67.786 298.818 67.8225H298.818Z"
+                fill="#CCCCCC"
+              />
+              <path
+                d="M208.878 80.1833H126.166C125.889 80.1467 125.634 80.0104 125.449 79.7998C125.264 79.5893 125.163 79.3188 125.163 79.0387C125.163 78.7587 125.264 78.4882 125.449 78.2776C125.634 78.0671 125.889 77.9308 126.166 77.8942H208.878C209.156 77.9308 209.411 78.0671 209.596 78.2776C209.78 78.4882 209.882 78.7587 209.882 79.0387C209.882 79.3188 209.78 79.5893 209.596 79.7998C209.411 80.0104 209.156 80.1467 208.878 80.1833Z"
+                fill="#CCCCCC"
+              />
+              <path
+                d="M209.079 92.773H126.367C126.089 92.7364 125.835 92.6001 125.65 92.3896C125.465 92.179 125.363 91.9085 125.363 91.6285C125.363 91.3484 125.465 91.0779 125.65 90.8674C125.835 90.6568 126.089 90.5205 126.367 90.4839H209.079C209.357 90.5205 209.612 90.6568 209.796 90.8674C209.981 91.0779 210.083 91.3484 210.083 91.6285C210.083 91.9085 209.981 92.179 209.796 92.3896C209.612 92.6001 209.357 92.7364 209.079 92.773Z"
+                fill="#CCCCCC"
+              />
+              <path
+                d="M246.621 80.1833H222.931C222.654 80.1467 222.399 80.0104 222.214 79.7998C222.029 79.5893 221.928 79.3188 221.928 79.0387C221.928 78.7587 222.029 78.4882 222.214 78.2776C222.399 78.0671 222.654 77.9308 222.931 77.8942H246.621C246.898 77.9308 247.153 78.0671 247.338 78.2776C247.523 78.4882 247.624 78.7587 247.624 79.0387C247.624 79.3188 247.523 79.5893 247.338 79.7998C247.153 80.0104 246.898 80.1467 246.621 80.1833Z"
+                fill="#CCCCCC"
+              />
+              <path
+                d="M246.621 92.5439H222.931C222.654 92.5073 222.399 92.3711 222.214 92.1605C222.029 91.9499 221.928 91.6795 221.928 91.3994C221.928 91.1194 222.029 90.8489 222.214 90.6383C222.399 90.4278 222.654 90.2915 222.931 90.2549H246.621C246.898 90.2915 247.153 90.4278 247.338 90.6383C247.523 90.8489 247.624 91.1194 247.624 91.3994C247.624 91.6795 247.523 91.9499 247.338 92.1605C247.153 92.3711 246.898 92.5073 246.621 92.5439Z"
+                fill="#CCCCCC"
+              />
+              <path
+                d="M286.371 92.5439H262.681C262.404 92.5073 262.149 92.3711 261.964 92.1605C261.779 91.9499 261.677 91.6795 261.677 91.3994C261.677 91.1194 261.779 90.8489 261.964 90.6383C262.149 90.4278 262.404 90.2915 262.681 90.2549H286.371C286.648 90.2915 286.903 90.4278 287.088 90.6383C287.273 90.8489 287.374 91.1194 287.374 91.3994C287.374 91.6795 287.273 91.9499 287.088 92.1605C286.903 92.3711 286.648 92.5073 286.371 92.5439Z"
+                fill="#CCCCCC"
+              />
+              <path
+                d="M149.053 55.0038H125.363C125.086 54.9672 124.831 54.8309 124.646 54.6203C124.461 54.4098 124.36 54.1393 124.36 53.8592C124.36 53.5792 124.461 53.3087 124.646 53.0981C124.831 52.8876 125.086 52.7513 125.363 52.7147H149.053C149.33 52.7513 149.585 52.8876 149.77 53.0981C149.955 53.3087 150.056 53.5792 150.056 53.8592C150.056 54.1393 149.955 54.4098 149.77 54.6203C149.585 54.8309 149.33 54.9672 149.053 55.0038Z"
+                fill="#CCCCCC"
+              />
+              <path
+                d="M208.376 199.356H125.665C125.387 199.319 125.132 199.183 124.947 198.972C124.763 198.762 124.661 198.491 124.661 198.211C124.661 197.931 124.763 197.661 124.947 197.45C125.132 197.24 125.387 197.103 125.665 197.067H208.377C208.654 197.103 208.909 197.24 209.094 197.45C209.278 197.661 209.38 197.931 209.38 198.211C209.38 198.491 209.278 198.762 209.094 198.972C208.909 199.183 208.654 199.319 208.377 199.356H208.376Z"
+                fill="#CCCCCC"
+              />
+              <path
+                d="M207.975 224.535H125.263C124.985 224.499 124.73 224.363 124.546 224.152C124.361 223.941 124.259 223.671 124.259 223.391C124.259 223.111 124.361 222.84 124.546 222.63C124.73 222.419 124.985 222.283 125.263 222.246H207.975C208.253 222.283 208.508 222.419 208.692 222.63C208.877 222.84 208.979 223.111 208.979 223.391C208.979 223.671 208.877 223.941 208.692 224.152C208.508 224.363 208.253 224.499 207.975 224.535H207.975Z"
+                fill="#CCCCCC"
+              />
+              <path
+                d="M208.176 237.125H125.464C125.186 237.089 124.931 236.952 124.746 236.742C124.562 236.531 124.46 236.261 124.46 235.981C124.46 235.701 124.562 235.43 124.746 235.22C124.931 235.009 125.186 234.873 125.464 234.836H208.176C208.453 234.873 208.708 235.009 208.893 235.22C209.078 235.43 209.179 235.701 209.179 235.981C209.179 236.261 209.078 236.531 208.893 236.742C208.708 236.952 208.453 237.089 208.176 237.125H208.176Z"
+                fill="#CCCCCC"
+              />
+              <path
+                d="M243.509 224.765H219.82C219.542 224.728 219.287 224.592 219.102 224.381C218.918 224.171 218.816 223.9 218.816 223.62C218.816 223.34 218.918 223.069 219.102 222.859C219.287 222.648 219.542 222.512 219.82 222.475H243.509C243.787 222.512 244.042 222.648 244.226 222.859C244.411 223.069 244.513 223.34 244.513 223.62C244.513 223.9 244.411 224.171 244.226 224.381C244.042 224.592 243.787 224.728 243.509 224.765Z"
+                fill="#CCCCCC"
+              />
+              <path
+                d="M243.509 237.125H219.82C219.542 237.089 219.287 236.952 219.102 236.742C218.918 236.531 218.816 236.261 218.816 235.981C218.816 235.701 218.918 235.43 219.102 235.22C219.287 235.009 219.542 234.873 219.82 234.836H243.509C243.787 234.873 244.042 235.009 244.226 235.22C244.411 235.43 244.513 235.701 244.513 235.981C244.513 236.261 244.411 236.531 244.226 236.742C244.042 236.952 243.787 237.089 243.509 237.125Z"
+                fill="#CCCCCC"
+              />
+              <path
+                d="M283.259 224.765H259.569C259.292 224.728 259.037 224.592 258.852 224.381C258.667 224.171 258.566 223.9 258.566 223.62C258.566 223.34 258.667 223.069 258.852 222.859C259.037 222.648 259.292 222.512 259.569 222.475H283.259C283.536 222.512 283.791 222.648 283.976 222.859C284.161 223.069 284.263 223.34 284.263 223.62C284.263 223.9 284.161 224.171 283.976 224.381C283.791 224.592 283.536 224.728 283.259 224.765Z"
+                fill="#CCCCCC"
+              />
+              <path
+                d="M298.918 211.946H168.827C168.55 211.909 168.295 211.773 168.11 211.563C167.925 211.352 167.824 211.082 167.824 210.801C167.824 210.521 167.925 210.251 168.11 210.04C168.295 209.83 168.55 209.694 168.827 209.657H298.918C299.196 209.694 299.451 209.83 299.635 210.04C299.82 210.251 299.922 210.521 299.922 210.801C299.922 211.082 299.82 211.352 299.635 211.563C299.451 211.773 299.196 211.909 298.918 211.946Z"
+                fill="#CCCCCC"
+              />
+              <path
+                d="M149.153 211.946H125.464C125.186 211.909 124.931 211.773 124.746 211.563C124.562 211.352 124.46 211.082 124.46 210.801C124.46 210.521 124.562 210.251 124.746 210.04C124.931 209.83 125.186 209.694 125.464 209.657H149.153C149.431 209.694 149.686 209.83 149.87 210.04C150.055 210.251 150.157 210.521 150.157 210.801C150.157 211.082 150.055 211.352 149.87 211.563C149.686 211.773 149.431 211.909 149.153 211.946Z"
+                fill="#CCCCCC"
+              />
+              <path
+                d="M188.402 113.109L156.28 144.823L188.402 176.536L195.629 169.31L171.337 145.023L195.829 120.536L188.402 113.109Z"
+                fill="#E6E6E6"
+              />
+              <path
+                d="M235.78 113.109L267.901 144.823L235.78 176.536L228.553 169.31L252.844 145.023L228.352 120.536L235.78 113.109Z"
+                fill="#E6E6E6"
+              />
+              <path
+                d="M188.402 113.109L156.28 144.823L188.402 176.536L195.629 169.31L171.337 145.023L195.829 120.536L188.402 113.109Z"
+                fill="#6C63FF"
+              />
+              <path
+                d="M235.78 113.109L267.901 144.823L235.78 176.536L228.553 169.31L252.844 145.023L228.352 120.536L235.78 113.109Z"
+                fill="#6C63FF"
+              />
+              <path
+                d="M187.977 378.393C197.971 391.775 218.718 393.184 218.718 393.184C218.718 393.184 223.26 372.895 213.266 359.513C203.271 346.131 182.524 344.723 182.524 344.723C182.524 344.723 177.982 365.011 187.977 378.393Z"
+                fill="#E6E6E6"
+              />
+              <path
+                d="M238.891 383.424C232.296 392.254 218.606 393.184 218.606 393.184C218.606 393.184 215.608 379.796 222.203 370.966C228.799 362.135 242.489 361.206 242.489 361.206C242.489 361.206 245.486 374.593 238.891 383.424Z"
+                fill="#E6E6E6"
+              />
+              <path
+                d="M352.003 392.921H72.6739V395H352.003V392.921Z"
+                fill="#3F3D56"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-content aboutme">
+        <div class="section-container">
+          <div class="images-about-me">
+            <picture class="photo-img">
+              <source
+                media="(min-width: 768px)"
+                srcset="images/photo-normal.jpg"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="images/photo-small.jpg"
+              />
+              <img
+                src="images/photo-normal.jpg"
+                class="my-photo"
+                alt="My Photo"
+              />
+            </picture>
+          </div>
+          <div class="description-about-me">
+            <h2 class="section-title" id="#">About me</h2>
+            <p class="content-text">
+              Hi, My name is Vladimir. In my portfolio, are few of the programs
+              that I've developed. Thank you in advance for your time and
+              consideration. I look forward to working with you soon.
+            </p>
+            <p class="content-text">
+              I have an Engineer's degree in the Bauman Moscow State Technical
+              University, in Russia. After university, I was developing
+              algorithms computer vision on C++. After this, I learned Android,
+              Java, and started a new career as an Android Developer.
+            </p>
+            <p class="content-text">
+              At that moment, I`m working at the Dialog company, witch
+              developing a platform for external and inner corporate
+              communications. I`m able to create fast responsive UI and build
+              basic architecture for big flexible, scalable mobile applications.
+              I`m good at fixing a exists bugs and at refactoring code, witch in
+              future leads, what fixed bugs don`t repeat. I`m skilled at
+              creating perfect CI/CD pipeline for every week builds of the
+              newest versions of a mobile application. I`m ready to contribute
+              to the company unique friendly atmosphere.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="description-footer-container">
+          <h2 class="section-title">Contacts</h2>
+          <p class="content-text">
+            Hi, My name is Vladimir. In my portfolio, are few of the programs
+            that I've developed. Than
+          </p>
+        </div>
+        <form class="feedback-form">
+          <div class="form-row">
+            <input type="text" class="field" placeholder="Your name" required />
+          </div>
+          <div class="form-row">
+            <input
+              type="email"
+              class="field"
+              placeholder="Your E-mail"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <textarea
+              class="field textarea"
+              placeholder="Comment"
+              required
+            ></textarea>
+          </div>
+          <div class="form-row">
+            <button class="send-button">Send</button>
+          </div>
 
-    <footer>
+          <div class="form-row">
+            <label class="checkbox-group">
+              <input type="checkbox" required />
+              <span class="content-text">Agreement</span>
+            </label>
+          </div>
+        </form>
+
+
+
+        <div class="footer-links-icons">
+            <ul class="icons">
+              <li class="icon">
+                <a
+                  href="http://linkedin.com/in/bugtsa/"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg
+                    class="icon-color"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.4844 0H3.51562C1.57727 0 0 1.57727 0 3.51562V20.4844C0 22.4227 1.57727 24 3.51562 24H20.4844C22.4227 24 24 22.4227 24 20.4844V3.51562C24 1.57727 22.4227 0 20.4844 0ZM8.48438 19.0312H5.67188V9.1875H8.48438V19.0312ZM8.48438 7.78125H5.67188V4.96875H8.48438V7.78125ZM18.3281 19.0312H15.5156V13.4062C15.5156 12.631 14.8846 12 14.1094 12C13.3341 12 12.7031 12.631 12.7031 13.4062V19.0312H9.89062V9.1875H12.7031V9.71759C13.4399 9.48853 13.9186 9.1875 14.8125 9.1875C16.7199 9.18951 18.3281 10.9006 18.3281 12.9229V19.0312Z"
+                    />
+                  </svg>
+                  <span class="icons-link-text">linkedin</span>
+                </a>
+              </li>
+              <li class="icon">
+                <a
+                  href="https://telegram.im/@bugtsa"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg
+                    class="icon-color"
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.77478 12.6752L8.75977 20.1371L12.6458 16.2511L19.3087 21.5469L24 0.453125L0 10.45L5.77478 12.6752ZM17.142 6.50513L9.79596 13.2055L8.88098 16.6539L7.19073 12.4275L17.142 6.50513Z"
+                    />
+                  </svg>
+                  <span class="icons-link-text">Telegram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+
+
+
+      </div>
     </footer>
-    
-</body>
+  </body>
 </html>
